@@ -1,5 +1,5 @@
-//* 
-/* Copyright 2019 Adrian Bueno Olmedo <adrian.bueno.alum@iescamp.es>.
+/* 
+ * Copyright 2019 Mario Merlos Abella <mario.merlos.alum@iescamp.es>.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,17 +29,17 @@ public class Main {
                     .useLocale(Locale.ENGLISH).useDelimiter("\\s+");
 
     public static void main(String[] args) {
-        double Distance, SantReached;
+        double distance, santReached;
 
         try {
             // Incorporación datos  
             System.out.printf("Desplazamiento diario (km) ...: ");
-            Distance = SCN.nextDouble();
-            SantReached = 980 / Distance;
+            distance = SCN.nextDouble();
+            santReached = 980 / distance;
             //Mensaje
             System.out.printf(Locale.ENGLISH,
                     "Desplazamiento diario (km) ...: %.2f Km%n Días de Clases/Camino ........: %d%n",
-                    Distance, (int) SantReached < SantReached ? (int) SantReached + 1 : (int)SantReached);
+                    distance, (int) santReached < santReached ? (int) santReached + 1 : (int)santReached);
             
         } catch (Exception e) {
             //Mensaje
